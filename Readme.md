@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Денис Парастюк](https://up.htmlacademy.ru/htmlcss/35/user/2197135).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Кислый aka Отец Фронт-енда :)] (https://htmlacademy.ru/profile/smart-grizzly)
 
 ---
 
