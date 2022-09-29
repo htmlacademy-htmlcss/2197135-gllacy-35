@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
@@ -10,11 +10,12 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">
-              <img class="logo" src="" alt="logo" />
+              <img class="logo" src="images/header/logo.svg" width="137" height="56" alt="logo">
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalogue.html">Каталог</a>
+            <a class="navigation-link" href="catalogue.html">
+              <img class="catalogue_arrow" src="images/header/Arrow-down.svg" alt="меню каталога" width="16" height="16">Каталог</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -28,13 +29,16 @@
             <a class="navigation-link" href="tel:78005558628">+7 800 555-86-28</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Поиск</a>
+            <a class="navigation-link" href="#">
+              <img class="search-button" src="images/header/Search.svg" alt="поиск" width="16" height="16">Поиск</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Вход</a>
+            <a class="navigation-link" href="#">
+              <img class="log-in_button" src="images/header/Log-in.svg" alt="вход" width="16" height="16">Вход</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Корзина</a>
+            <a class="navigation-link" href="#">
+              <img class="bucket-button" src="images/header/bucket.svg" alt="корзина" width="16" height="16">Корзина</a>
           </li>
         </ul>
       </nav>
@@ -46,9 +50,11 @@
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a href="index.html">Главная</a>
+            <img class="breadcrumbs-arrows" src="images/catalogue/chevrons-right.svg" alt="стрелки вправо" width="12" height="12">
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="catalogue.html">Каталог</a>
+            <img class="breadcrumbs-arrows" src="images/catalogue/chevrons-right.svg" alt="стрелки вправо" width="12" height="12">
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Сливочное мороженное</a>
@@ -69,32 +75,26 @@
           <fieldset class="price-range">
             <legend class="price-range-legend">Цена: 100 ₽ – 500 ₽</legend>
             <label for="price-range" class="visually-hidden">Цена</label>
-            <input
-              class="price-range-data"
-              type="range"
-              id="price-range"
-              min="100"
-              max="500"
-            />
+            <input class="price-range-data" type="range" id="price-range" min="100" max="500">
           </fieldset>
           <fieldset class="fat">
             <legend class="fat-legend">Жирность</legend>
             <ul class="fat-list">
               <li class="fat-item">
                 <label class="fat-label" for="0%">0%</label>
-                <input class="fat-data" name="0%" type="radio" id="0%" />
+                <input class="fat-data" name="0%" type="radio" id="0%">
               </li>
               <li class="fat-item">
                 <label class="fat-label" for="10%">до 10%</label>
-                <input class="fat-data" name="10%" type="radio" id="10%" checked />
+                <input class="fat-data" name="10%" type="radio" id="10%" checked>
               </li>
               <li class="fat-item">
                 <label class="fat-label" for="30%">до 30%</label>
-                <input class="fat-data" name="3%" type="radio" id="30%" />
+                <input class="fat-data" name="3%" type="radio" id="30%">
               </li>
               <li class="fat-item">
                 <label class="fat-label" for=">30%">выше 30%</label>
-                <input class="fat-data" name=">30%" type="radio" id=">30%" />
+                <input class="fat-data" name=">30%" type="radio" id=">30%">
               </li>
             </ul>
           </fieldset>
@@ -104,23 +104,23 @@
             <ul class="filler-list">
               <li class="filler-item">
                 <label class="filler-label" for="chocolate">шоколадные</label>
-                <input class="filler-data" name="chocolate" type="checkbox" id="chocolate" checked />
+                <input class="filler-data" name="chocolate" type="checkbox" id="chocolate" checked>
               </li>
               <li class="filler-item">
                 <label class="filler-label" for="sugar_powder">сахарные посыпки</label>
-                <input class="filler-data" name="sugar_powder" type="checkbox" id="sugar_powder" checked />
+                <input class="filler-data" name="sugar_powder" type="checkbox" id="sugar_powder" checked>
               </li>
               <li class="filler-item">
                 <label class="filler-label" for="fruits">фрукты</label>
-                <input class="filler-data" name="fruits" type="checkbox" id="fruits"/>
+                <input class="filler-data" name="fruits" type="checkbox" id="fruits">
               </li>
               <li class="filler-item">
                 <label class="filler-label" for="syrops">сиропы</label>
-                <input class="filler-data" name="syrops" type="checkbox" id="syrops" />
+                <input class="filler-data" name="syrops" type="checkbox" id="syrops">
               </li>
               <li class="filler-item">
                 <label class="filler-label" for="jams">джемы</label>
-                <input class="filler-data" name="jams" type="checkbox" id="jams" />
+                <input class="filler-data" name="jams" type="checkbox" id="jams">
               </li>
             </ul>
           </fieldset>
@@ -132,110 +132,122 @@
         <h2 class="visually-hidden">Список продуктов</h2>
         <ul class="products-list">
           <li class="product-item">
-            <img class="raspberry" src="" alt="малинка" />
+            <img class="raspberry" src="images/catalogue/product-cards/product-card.raspberry.jpg" alt="малинка" width="168" height="168">
             <h3>Малинка</h3>
             <p>Сливочное мороженое с малиновым джемом</p>
             <b class="price">310 ₽/кг</b>
             <button class="buy" type="button">
+              <img class="bucket_button" src="images/catalogue/bucket.svg" alt="положить в корзину" width="32" height="32">
               <span class="visually-hidden">Добавить в корзину</span>
             </button>
           </li>
           <li class="product-item">
-            <img class="phistachio" src="" alt="фисташка" />
+            <img class="phistachio" src="images/catalogue/product-cards/product-card.phistachio.jpg" alt="фисташка" width="168" height="168">
             <h3>Фисташка</h3>
             <p>Фисташковый пломбир с кусочками шоколада</p>
             <b class="price">340 ₽/кг</b>
             <button class="buy" type="button">
+              <img class="bucket_button" src="images/catalogue/bucket.svg" alt="положить в корзину" width="32" height="32">
               <span class="visually-hidden">Добавить в корзину</span>
             </button>
           </li>
           <li class="product-item">
-            <img class="blueberry" src="" alt="Черника" />
+            <img class="blueberry" src="images/catalogue/product-cards/product-card.blueberry.jpg" alt="Черника" width="168" height="168">
             <h3>Черника</h3>
             <p>Крем-брюле с черничным джемом</p>
             <b class="price">330 ₽/кг</b>
             <button class="buy" type="button">
+              <img class="bucket_button" src="images/catalogue/bucket.svg" alt="положить в корзину" width="32" height="32">
               <span class="visually-hidden">Добавить в корзину</span>
             </button>
           </li>
           <li class="product-item">
-            <img class="bubble-gum" src="" alt="Бабл-гам" />
+            <img class="bubble-gum" src="images/catalogue/product-cards/product-card.bubble-gum.jpg" alt="Бабл-гам" width="168" height="168">
             <h3>Бабл-гам</h3>
             <p>Ванильный пломбир со сладкой посыпкой</p>
             <b class="price">320 ₽/кг</b>
             <button class="buy" type="button">
+              <img class="bucket_button" src="images/catalogue/bucket.svg" alt="положить в корзину" width="32" height="32">
               <span class="visually-hidden">Добавить в корзину</span>
             </button>
           </li>
           <li class="product-item">
-            <img class="blackberry" src="" alt="Ежевика" />
+            <img class="blackberry" src="images/catalogue/product-cards/product-card.blackberry.jpg" alt="Ежевика" width="168" height="168">
             <h3>Ежевика</h3>
             <p>Сливочное мороженое с ежевичным джемом</p>
             <b class="price">330 ₽/кг</b>
             <button class="buy" type="button">
+              <img class="bucket_button" src="images/catalogue/bucket.svg" alt="положить в корзину" width="32" height="32">
               <span class="visually-hidden">Добавить в корзину</span>
             </button>
           </li>
           <li class="product-item">
-            <img class="banana" src="" alt="Банан" />
+            <img class="banana" src="images/catalogue/product-cards/product-card.banana.jpg" alt="Банан" width="168" height="168">
             <h3>Банан</h3>
             <p>Сливочный пломбир с банановым вкусом</p>
             <b class="price">340 ₽/кг</b>
             <button class="buy" type="button">
+              <img class="bucket_button" src="images/catalogue/bucket.svg" alt="положить в корзину" width="32" height="32">
               <span class="visually-hidden">Добавить в корзину</span>
             </button>
           </li>
           <li class="product-item">
-            <img class="chocolate" src="" alt="Шоколад" />
+            <img class="chocolate" src="images/catalogue/product-cards/product-card.chocolate.jpg" alt="Шоколад" width="168" height="168">
             <h3>Шоколад</h3>
             <p>Классический шоколадный пломбир</p>
             <b class="price">270 ₽/кг</b>
             <button class="buy" type="button">
+              <img class="bucket_button" src="images/catalogue/bucket.svg" alt="положить в корзину" width="32" height="32">
               <span class="visually-hidden">Добавить в корзину</span>
             </button>
           </li>
           <li class="product-item">
-            <img class="strawberry" src="" alt="Клубничка" />
+            <img class="strawberry" src="images/catalogue/product-cards/product-card.strawberry.jpg" alt="Клубничка" width="168" height="168">
             <h3>Клубничка</h3>
             <p>Сливочный пломбир с клубничным вкусом</p>
             <b class="price">300 ₽/кг</b>
             <button class="buy" type="button">
+              <img class="bucket_button" src="images/catalogue/bucket.svg" alt="положить в корзину" width="32" height="32">
               <span class="visually-hidden">Добавить в корзину</span>
             </button>
           </li>
           <li class="product-item">
-            <img class="lemon" src="" alt="Лимон" />
+            <img class="lemon" src="images/catalogue/product-cards/product-card.lemon.jpg" alt="Лимон" width="168" height="168">
             <h3>Лимон</h3>
             <p>Освежающий лимонный сорбет</p>
             <b class="price">310 ₽/кг</b>
             <button class="buy" type="button">
+              <img class="bucket_button" src="images/catalogue/bucket.svg" alt="положить в корзину" width="32" height="32">
               <span class="visually-hidden">Добавить в корзину</span>
             </button>
           </li>
           <li class="product-item">
-            <img class="mint" src="" alt="Ментол" />
+            <img class="mint" src="images/catalogue/product-cards/product-card.mint.jpg" alt="Ментол" width="168" height="168">
             <h3>Ментол</h3>
             <p>Сливочный пломбир с ментоловым сиропом</p>
             <b class="price">320 ₽/кг</b>
             <button class="buy" type="button">
+              <img class="bucket_button" src="images/catalogue/bucket.svg" alt="положить в корзину" width="32" height="32">
               <span class="visually-hidden">Добавить в корзину</span>
             </button>
           </li>
           <li class="product-item">
-            <img class="nut" src="" alt="Орешек" />
+            <img class="nut" src="images/catalogue/product-cards/product-card.nut.jpg" alt="Орешек" width="168" height="168">
             <h3>Орешек</h3>
             <p>Фисташковый пломбир с шоколадным сиропом</p>
             <b class="price">360 ₽/кг</b>
             <button class="buy" type="button">
+              <img class="bucket_button" src="images/catalogue/bucket.svg" alt="положить в корзину" width="32" height="32">
               <span class="visually-hidden">Добавить в корзину</span>
             </button>
           </li>
           <li class="product-item">
-            <img class="crem-brule" src="" alt="Крем-брюле" />
+            <img class="crem-brule" src="images/catalogue/product-cards/product-card.crem-brule.jpg" alt="Крем-брюле" width="168" height="168">
             <h3>Крем-брюле</h3>
             <p>Классическое крем-брюле</p>
             <b class="price">280 ₽/кг</b>
             <button class="buy" type="button">
+              <img class="bucket_button" src="images/catalogue/bucket.svg" alt="положить в корзину" width="32" height="32">
               <span class="visually-hidden">Добавить в корзину</span>
             </button>
           </li>
@@ -244,6 +256,7 @@
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-prev" href="#">
+              <img class="previous-page" src="images/catalogue/previous_page.svg" alt="предыдущая страница" width="16" height="16">
               <span class="visually-hidden">Предыдущая страница</span>
             </a>
           </li>
@@ -264,6 +277,7 @@
           </li>
           <li class="pagination-item">
             <a class="pagination-link pagination-next" href="#">
+              <img class="next-page" src="images/catalogue/next_page.svg" alt="следующая страница" width="16" height="16">
               <span class="visually-hidden">Следующая страница</span>
             </a>
           </li>
@@ -276,16 +290,19 @@
         <ol class="social-items">
           <li class="footer-social">
             <a class="button" href="https://t.me/htmlacademy">
+              <img class="telegramm_icon" src="images/main/icons.social/icon.telegram.svg" width="24" height="24" alt="телеграмм">
               <span class="visually-hidden">Telegramm</span>
             </a>
           </li>
           <li class="footer-social">
             <a class="button" href="https://vk.com/htmlacademy">
+              <img class="vk_icon" src="images/main/icons.social/icon.vk.svg" width="24" height="24" alt="ВК">
               <span class="visually-hidden">VK</span>
             </a>
           </li>
           <li class="footer-social">
             <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <img class="youtube_icon" src="images/main/icons.social/icon.youtube.svg" width="24" height="24" alt="ютуб">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
@@ -294,7 +311,8 @@
 
       <section class="additional-info-section">
         <h2 class="visually-hidden">Дополнительная информация</h2>
-        <a class="additional-info-link" href="#">Для поставщиков</a>
+        <a class="additional-info-link" href="#">
+          <img class="footer-heart" src="images/footer/Heart-fill.svg" alt="сердце" width="14" height="12"> Для поставщиков</a>
         <a class="additional-info-link" href="#">О производстве</a>
         <a class="additional-info-link" href="#">Наши документы</a>
         <a class="additional-info-link" href="#">Экологические стандарты</a>
@@ -303,7 +321,7 @@
       <section class="creator-link-section">
         <h2 class="visually-hidden">Автор сайта</h2>
         <a class="academy-link" href=" https://htmlacademy.ru/">
-          <img class="academy-logo" src="" alt="Лого академии" />
+          <img class="academy-logo" src="images/footer/logo_htmlacademy.svg" alt="Лого академии" width="93" height="27">
         </a>
         <p>
           Сделано в
