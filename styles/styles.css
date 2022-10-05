@@ -42,6 +42,7 @@ body {
   vertical-align: top;
   text-align: center;
 }
+
 .mob_phone {
   font-weight: 700;
 }
@@ -67,7 +68,7 @@ body {
   text-align: left;
 }
 
-.choose_ice-cream-section p {
+.choose_ice-cream-description {
   font-weight: 400;
   line-height: 24px;
   font-size: 18px;
@@ -80,6 +81,7 @@ body {
   height: 38px;
   border-radius: 100px;
 }
+
 .button {
   font-weight: 700;
   font-size: 16px;
@@ -100,28 +102,30 @@ body {
   line-height: 46px;
 }
 
-.gifts-items li {
+.gifts-section {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.gifts-item {
   background-color: #FF7799;
   border-radius: 16px;
   padding: 36px 200px 36px 36px;
   width: 570px;
 }
-.gifts-items h3 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-  text-align:left;
-  vertical-align: top;
 
-}
-.gifts-items p {
+.gift-description {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   text-align: left;
   vertical-align: top;
 }
-.ice-cream_popular-section h2 {
+
+.ice-cream-popular-header {
   font-size: 32px;
   line-height: 46px;
   font-weight: 900;
@@ -129,17 +133,17 @@ body {
   vertical-align: top;
 }
 
-.ice-cream_popular-section img {
+.popular-card {
   border-radius: 100px;
 }
 
-.ice-cream_popular-section li {
+.popular-item {
   background-color: #FCFCFC;
   border-radius: 8px;
   width: 270px;
 }
 
-.ice-cream_popular-section h3 {
+.popular-name {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -147,7 +151,7 @@ body {
   vertical-align: top;
 }
 
-.ice-cream_popular-section p {
+.popular-description {
   color: #565C66;
   font-weight: 400;
   font-size: 16px;
@@ -185,14 +189,14 @@ body {
   width: 1122px;
 }
 
-.description h2 {
+.description-header {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
   text-align: center;
 }
 
-.description p {
+.description-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -266,7 +270,7 @@ body {
   background-size: 100%;
 }
 
-.delivery-sectiion h2 {
+.delivery-header {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -274,7 +278,7 @@ body {
   vertical-align: top;
 }
 
-.delivery-section p {
+.delivery-text {
   color:#565C66;
   font-weight:400;
   font-size: 16px;
@@ -282,12 +286,13 @@ body {
   text-align: left;
   vertical-align: top;
 }
+
 .delivery-block {
   background-color:#FCFCFC;
   width: 500px;
 }
 
-.delivery-section label {
+.delivery-data-name {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -312,7 +317,7 @@ body {
   background-size: 100%;
 }
 
-.address-section div {
+.address-section .address-block {
   width: 343px;
   background-color: #FCFCFC;
   font-style: normal;
@@ -322,7 +327,7 @@ body {
   text-align:left
 }
 
-.address-section address{
+.store-address{
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -331,7 +336,7 @@ body {
   text-align: left;
 }
 
-.additional-info-section a {
+.additional-info-link {
   color:#2D3440;
   font-weight: 400;
   font-size: 14px;
@@ -341,7 +346,7 @@ body {
   text-decoration: none;
 }
 
-.additional-info-section :first-of-type {
+.additional-info-link-selected {
   font-weight: 700;
 }
 
@@ -354,11 +359,11 @@ body {
   vertical-align: top;
 }
 
-.creator-link-section a {
+.academy-link {
   color: inherit;
 }
 
-.breadcrumbs a {
+.breadcrumbs-link {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -368,7 +373,7 @@ body {
   vertical-align: top;
 }
 
-.breadcrumbs .selected {
+.breadcrumbs-link-selected {
   text-decoration: underline;
 }
 
@@ -380,7 +385,7 @@ body {
   text-align: left;
 }
 
-.ice-cream-adjustment h2 {
+.adjustment-header {
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -422,17 +427,17 @@ body {
   border: 1px solid #FCFCFC;
 }
 
-.product-list-section img {
+.product-card {
   border-radius: 100px;
 }
 
-.product-list-section li {
+.product-item {
   background-color: #FCFCFC;
   border-radius: 8px;
   width: 270px;
 }
 
-.product-list-section h3 {
+.product-name {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -440,7 +445,7 @@ body {
   vertical-align: top;
 }
 
-.product-list-section p {
+.product-description {
   color: #565C66;
   font-weight: 400;
   font-size: 16px;
@@ -448,7 +453,7 @@ body {
   text-align: center;
 }
 
-.pagination li {
+.pagination-item {
   line-height: 20px;
   width: 24px;
   height: 24px;
