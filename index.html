@@ -45,15 +45,19 @@
         </ul>
       </nav>
     </header>
-    <main class="main-index">
+    <main class="main-container main-index">
+      <div class="page-container">
       <h1 class="visually-hidden">Gllacy shop</h1>
       <section class="choose_ice-cream-section">
+        <div class="slider-description-container">
         <h2 class="header_choose_ice-cream-section">Нежный пломбир<br> с клубничным джемом</h2>
         <p class="choose_ice-cream-description">
           Натуральное мороженое из свежих сливок<br> и молока с вкуснейшим
           клубничным джемом –<br> это идеальный десерт для всей семьи.
         </p>
         <a class="button" href="#">Заказать</a>
+        </div>
+        <div class="slider-photos-container">
         <img class="background_image" src="images/main/slides/slide-background.png" alt="подложка для морожееного" width="312" height="312">
         <img class="strawberry-ice_image" src="images/main/slides/ice-cream-slide-1.png" alt="нежный пломбир с джемом" width="306" height="507">
         <button class="slider-button" type="button">
@@ -76,6 +80,7 @@
              <span class="visually-hidden">Карамельный пломбир<br> с маршмеллоу</span>
           </li>
         </ol>
+        </div>
 
         <footer class="social">
           <ol class="social-items">
@@ -177,31 +182,40 @@
           Магазин Глейси – это онлайн и офлайн-магазин по продаже<br> мороженого
           собственного производства на развес
         </h2>
-        <img class="description-icon" src="images/main/description-icons/icon-ice-cream-description.svg" alt="мороженное" width="48" height="48">
-        <p class="description-text">
-          Всё наше мороженое изготавливается на собственном<br> производстве с
-          использованием современного<br> оборудования и проверенных временем
-          технологий.
-        </p>
-        <img class="description-icon" src="images/main/description-icons/icon-cow-description.svg" alt="коровка" width="48" height="48">
-        <p class="description-text">
-          Закупка ингредиентов производится только<br> у проверенных фермерских
-          хозяйств, с которыми<br> нас связывает долговременное сотрудничество.
-        </p>
-        <img class="description-icon" src="images/main/description-icons/icon-leaf-description.svg" alt="листик" width="48" height="48">
-        <p class="description-text">
-          Для приготовления мороженого используются сливки<br> и молоко высочайшего
-          качества. Все ингредиенты<br> и добавки произведены из натурального сырья.
-        </p>
-        <img class="description-icon" src="images/main/description-icons/icon-termometr-description.svg" alt="термометр" width="48" height="48">
-        <p class="description-text">
-          Доставка нашего мороженого осуществляется в<br> специальном термопаке,
-          который не даёт мороженому<br> растаять и позволяет сохранить превосходный
-          вкус.
-        </p>
+        <div class="description-container">
+          <ul class="description-list">
+            <li class="description-list-item">
+              <img class="description-icon" src="images/main/description-icons/icon-ice-cream-description.svg" alt="мороженное" width="48" height="48">
+              <p class="description-text">
+                 Всё наше мороженое изготавливается на собственном<br> производстве с
+                 использованием современного<br> оборудования и проверенных временем
+                 технологий.
+              </p></li>
+            <li class="description-list-item">
+               <img class="description-icon" src="images/main/description-icons/icon-cow-description.svg" alt="коровка" width="48" height="48">
+               <p class="description-text">
+                 Закупка ингредиентов производится только<br> у проверенных фермерских
+                 хозяйств, с которыми<br> нас связывает долговременное сотрудничество.
+               </p></li>
+            <li class="description-list-item">
+               <img class="description-icon" src="images/main/description-icons/icon-leaf-description.svg" alt="листик" width="48" height="48">
+               <p class="description-text">
+                 Для приготовления мороженого используются сливки<br> и молоко высочайшего
+                 качества. Все ингредиенты<br> и добавки произведены из натурального сырья.
+               </p></li>
+            <li class="description-list-item">
+               <img class="description-icon" src="images/main/description-icons/icon-termometr-description.svg" alt="термометр" width="48" height="48">
+               <p class="description-text">
+                 Доставка нашего мороженого осуществляется в<br> специальном термопаке,
+                 который не даёт мороженому<br> растаять и позволяет сохранить превосходный
+                 вкус.
+               </p></li>
+           </ul>
+        </div>
       </div>
       </section>
 
+      <div class="blog-subscription-container">
       <section class="blog-section">
         <h2 class="visually-hidden">Ссылка на блог</h2>
         <p>Новое в нашем блоге</p>
@@ -227,14 +241,17 @@
         </form>
         </div>
       </section>
+      </div>
 
       <section class="delivery-section">
+        <div class="delivery-description-container">
         <h2 class="delivery-header">Доставка любимого<br> мороженого на дом</h2>
         <p class="delivery-text">
           Хочется полакомиться любимым десертом,<br> но нет времени съездить в
           магазин? Закажите<br> доставку мороженого на дом, и курьер<br> привезёт вам
           ваш заказ в течение часа!
         </p>
+        </div>
         <div class="delivery-block">
         <p class="delivery-text">
           Укажите адрес и дату доставки, и мы свяжемся<br> с вами, чтобы подтвердить
@@ -246,12 +263,12 @@
           method="post"
         >
           <label for="delivery-date" class="delivery-data-name">Дата</label>
-          <img class="info-icon" src="images/main/description_icons/icon_info.svg" alt="информация" width="14" height="14">
+          <img class="info-icon" src="images/main/description-icons/icon-info.svg" alt="информация" width="14" height="14">
           <input type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
           <label for="delivery-phone" class="delivery-data-name">Телефон</label>
           <input type="tel" id="delivery-phone" name="delivery-phone" placeholder="+7 800 999-00-00">
           <label for="delivery-adress" class="delivery-data-name">Адресс</label>
-          <img class="info-icon" src="images/main/description_icons/icon_info.svg" alt="информация" width="14" height="14">
+          <img class="info-icon" src="images/main/description-icons/icon-info.svg" alt="информация" width="14" height="14">
           <input type="text" id="delivery-adress" name="delivery-adress" placeholder="ул. Большая Конюшенная, 19/8">
           <button type="submit" class="button-submit">Отправить</button>
         </form>
@@ -274,8 +291,10 @@
         <a class="button-submit" href="#">Форма обратной связи</a>
         </div>
         </section>
+        </div>
     </main>
     <footer class="footer-index">
+      <div class="page-footer-container">
       <section class="social">
         <h2 class="visually-hidden">Cоциальные сети</h2>
         <ol class="social-items">
@@ -319,6 +338,7 @@
           <a class="academy-link" href=" https://htmlacademy.ru/">html academy</a>© 2021
         </p>
       </section>
+      </div>
     </footer>
   </body>
 </html>
