@@ -22,7 +22,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -30,9 +38,30 @@ body {
   background-color: #feafc3
 }
 
+.main-container{
+  flex-grow: 1;
+}
+
 .main-menu {
   color: #2D3440;
   background-color: #feafc3;
+}
+
+.navigation {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 575px;
+}
+
+.navigation-user {
+  max-width: 431px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -53,11 +82,33 @@ body {
   border: 2px solid rgba(252, 252, 252, 0.3);
   border-radius: 30px;
   padding: 6px 16px;
-  text-align:center;
+  text-align: center;
 }
 
 .visually-hidden {
   visibility: hidden;
+}
+
+.page-container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.choose_ice-cream-section {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.slider-description-container{
+  display: flex;
+  flex-direction: column;
+  width: 470px;
+  margin-left: 70px;
+}
+
+.slider-photos-container{
+  display: flex;
+  justify-content: space-around;
 }
 
 .header_choose_ice-cream-section {
@@ -96,6 +147,8 @@ body {
 }
 
 .header-gifts-section {
+  width: 1170px;
+  margin: 0 auto;
   font-weight: 900;
   font-size: 32px;
   text-align: center;
@@ -106,8 +159,14 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  text-align: left;
   vertical-align: top;
+  margin: 0 auto;
+}
+
+.gifts-items {
+  display: flex;
+  width: 1170px;
+  margin: 55px auto;
 }
 
 .gifts-item {
@@ -115,6 +174,7 @@ body {
   border-radius: 16px;
   padding: 36px 200px 36px 36px;
   width: 570px;
+  margin-right: 30px;
 }
 
 .gift-description {
@@ -131,6 +191,13 @@ body {
   font-weight: 900;
   text-align: center;
   vertical-align: top;
+}
+
+.popular-list {
+  display: flex;
+  width: 1170px;
+  margin: 56px auto 80px;
+  justify-content: space-between;
 }
 
 .popular-card {
@@ -179,12 +246,15 @@ body {
   border-radius: 16px;
   padding: 24px;
   width: 1170px;
+  margin: 80px auto;
 }
 
 .description {
+  display: flex;
+  flex-direction: column;
   background-color: #FFFFFF;
   border-radius: 16px;
-  margin: 24px;
+  margin: auto;
   padding: 56px 40px;
   width: 1122px;
 }
@@ -194,6 +264,26 @@ body {
   font-size: 32px;
   line-height: 46px;
   text-align: center;
+  width: 995px;
+}
+
+.description-container {
+  width: 1042px;
+  margin: 56px 40px;
+}
+
+.description-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1042px;
+  height: 172px;
+}
+
+.description-list-item {
+  display: flex;
+  justify-content: space-between;
+  width: 506px;
 }
 
 .description-text {
@@ -203,6 +293,14 @@ body {
   color: #565C66;
   text-align: left;
   vertical-align: top;
+  width: 506px;
+}
+
+.blog-subscription-container{
+  display: flex;
+  margin: 80px auto;
+  width: 1170px;
+  justify-content:space-between;
 }
 
 .blog-section {
@@ -219,6 +317,7 @@ body {
   width:570px;
   height: 224px;
   background-size: 100%;
+  margin-right: 30px;
 }
 
 .blog-link {
@@ -244,6 +343,7 @@ body {
 
 .subscription-block {
   background-color:#FFFFFF;
+  border-radius: 16px;
   width: 558px;
 }
 
@@ -261,6 +361,8 @@ body {
 }
 
 .delivery-section {
+  display: flex;
+  justify-content: space-between;
   background-image: url(../images/main/background-images/background-delivery.jpg);
   background-repeat: no-repeat;
   border-radius: 16px;
@@ -268,6 +370,15 @@ body {
   width: 1170px;
   height: 534px;
   background-size: 100%;
+}
+
+.delivery-description-container{
+  display: flex;
+  flex-direction: column;
+  width: 371px;
+  margin-left: 100px;
+  margin-top: 167px;
+  margin-bottom: 163px;
 }
 
 .delivery-header {
@@ -288,8 +399,14 @@ body {
 }
 
 .delivery-block {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 40px;
   background-color:#FCFCFC;
+  border-radius: 8px;
   width: 500px;
+  margin: 64px 64px 64px auto;
 }
 
 .delivery-data-name {
@@ -301,6 +418,7 @@ body {
 }
 
 .address-section {
+  display: flex;
   font-family: "Inter", sans-serif;
   background-image: url(../images/main/background-images/background-address.jpg);
   background-repeat: repeat;
@@ -315,6 +433,7 @@ body {
   width: 1170px;
   height:492px;
   background-size: 100%;
+  margin-top: 80px;
 }
 
 .address-section .address-block {
@@ -324,7 +443,10 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  text-align:left
+  text-align: left;
+  border-radius: 8px;
+  margin: 64px auto;
+  padding:40px 40px 40px auto;
 }
 
 .store-address{
@@ -334,6 +456,22 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-align: left;
+}
+
+.page-footer-container {
+  display:flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.social-items {
+  width: 104px;
+  margin-right:299px;
+}
+
+.additional-info-section {
+  width: 356px;
+  margin-right: 200px;
 }
 
 .additional-info-link {
@@ -351,6 +489,8 @@ body {
 }
 
 .creator-link-section {
+  width: 193px;
+  margin-right: 14px;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -377,12 +517,19 @@ body {
   text-decoration: underline;
 }
 
+.catalogue-products {
+  display: flex;
+  flex-direction: column;
+}
+
 .ice-cream-adjustment {
+  width: 823px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color:#2D3440;
   text-align: left;
+  margin-right: 347px;
 }
 
 .adjustment-header {
@@ -398,7 +545,6 @@ body {
   border-radius: 20px;
   padding: 8px 16px;
   width: 196px;
-  height: 36px;
 }
 
 .price-range {
@@ -406,25 +552,38 @@ body {
   border-radius: 20px;
   padding: 8px 16px;
   width: 196px;
-  height: 36px;
 }
 
 .fat {
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 18px;
   padding: 8px 24px;
+  width: 383px;
 }
 
 .filler {
   padding: 9px 24px;
   border-radius: 18px;
   background-color: rgba(252, 252, 252, 0.3);
+  width: 604px;
 }
 
 .button-apply {
   color:#2D3440;
   background-color: rgba(252, 252, 252, 0.3);
   border: 1px solid #FCFCFC;
+  width: 185px;
+}
+
+.product-list-section {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .product-card {
@@ -435,6 +594,7 @@ body {
   background-color: #FCFCFC;
   border-radius: 8px;
   width: 270px;
+  margin-bottom: 40px;
 }
 
 .product-name {
