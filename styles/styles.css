@@ -82,7 +82,7 @@ body {
   border: 2px solid rgba(252, 252, 252, 0.3);
   border-radius: 30px;
   padding: 6px 16px;
-  text-align:center;
+  text-align: center;
 }
 
 .visually-hidden {
@@ -95,7 +95,6 @@ body {
 }
 
 .choose_ice-cream-section {
-  display: flex;
   width: 1170px;
   margin: 0 auto;
 }
@@ -104,7 +103,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 470px;
-  margin-left:70px;
+  margin-left: 70px;
 }
 
 .slider-photos-container{
@@ -444,9 +443,9 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  text-align:left;
+  text-align: left;
   border-radius: 8px;
-  margin: 64px;
+  margin: 64px auto;
   padding:40px 40px 40px auto;
 }
 
