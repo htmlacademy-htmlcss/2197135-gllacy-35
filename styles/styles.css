@@ -40,6 +40,8 @@ body {
 
 .main-container {
   flex-grow: 1;
+  width: 1170px;
+  margin: 0 auto;
 }
 
 .main-menu {
@@ -51,24 +53,24 @@ body {
   display: flex;
   width: 1170px;
   margin: 0 auto;
+  justify-content: space-between;
 }
 
 .navigation-list {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   margin-top: 24px;
   margin-bottom: 24px;
   padding: 0;
-  width: 650px;
+  min-width: 575px;
   list-style-type: none;
 }
 
 .navigation-user {
   display: flex;
-  justify-self: flex-end;
-  max-width: 520px;
-  margin-left: auto;
-  margin-right: -30px;
+  align-items: center;
+  min-width: 431px;
 }
 
 .navigation-link {
@@ -115,7 +117,7 @@ body {
 }
 
 .choose_ice-cream-section {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
   margin-bottom: 80px;
 }
@@ -238,6 +240,7 @@ body {
 
 .gifts-section {
   margin: 0 auto 80px;
+  max-width: 1170px;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -246,7 +249,6 @@ body {
 
 .gifts-items {
   display: flex;
-  width: 1170px;
   margin: 55px auto;
   list-style-type: none;
 }
@@ -255,7 +257,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 570px;
+  min-width: 570px;
   margin-right: 30px;
   height: 268px;
   background-color: #ff7799;
@@ -314,10 +316,12 @@ body {
 
 .popular-list {
   display: flex;
-  width: 1170px;
-  margin: 56px auto 80px;
+  max-width: 1170px;
+  margin-top: 56px;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: space-between;
-  height: 332px;
 }
 
 .popular-card {
@@ -329,8 +333,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 270px;
-  margin-bottom: 90px;
   height: 281px;
+  margin-right: 30px;
   background-color: #fcfcfc;
   border-radius: 8px;
 }
@@ -373,8 +377,8 @@ body {
 
 .description-section {
   padding: 24px;
-  width: 1170px;
-  margin: 80px auto;
+  max-width: 1170px;
+  margin: 0 auto;
   background-image: url(../images/main/background-images/background-description.png);
   background-repeat: repeat;
   border-radius: 16px;
@@ -384,7 +388,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 24px;
-  width: 1122px;
+  max-width: 1122px;
   height: 432px;
   margin: 0 auto;
   background-color: #ffffff;
