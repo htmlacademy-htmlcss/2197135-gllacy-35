@@ -1988,7 +1988,7 @@ body {
 
 .select-control {
   align-items: center;
-  width: 196px;
+  min-width: 196px;
   margin-top: 8px;
   padding: 8px 16px;
   padding-right: 34px;
@@ -2131,6 +2131,7 @@ body {
 
 .fat-options {
   display: flex;
+  flex-wrap: wrap;
   padding: 8px 24px;
   margin-top: 8px;
   max-width: 383px;
@@ -2173,7 +2174,8 @@ body {
   content: "";
 }
 
-.fat-label:hover .fat-control-mark {
+.fat-label:hover .fat-control-mark,
+.fat-label:focus .fat-control-mark {
   border-color: #FCFCFC;
 }
 
@@ -2184,6 +2186,10 @@ body {
 
 .fat-control-input:checked:hover+.fat-control-mark:before {
   background-color: #FCFCFC;
+}
+
+.fat-title {
+  margin-left: 15px;
 }
 
 .filler-container {
@@ -2205,10 +2211,6 @@ body {
   background-color: rgba(252, 252, 252, 0.3);
 }
 
-.fat-title {
-  margin-left: 15px;
-}
-
 .filler-label {
   position: relative;
   display: block;
@@ -2224,43 +2226,41 @@ body {
 .control-mark {
   position: absolute;
   left: -4px;
-  width: 14px;
-  height: 14px;
-  padding: 0;
-  border: 1.5px solid #2D3440;
+  width: 16px;
+  height: 16px;
+  outline: 1.5px solid #2D3440;
   border-radius: 3px;
 }
 
-.control-mark-checked {
-  border: none;
-}
-
-.checked-icon {
-  fill: #2D3440;
-}
-
-.filler-label:hover .control-mark {
-  border: 1.5px solid #FCFCFC;
-}
-
-.filler-control-input:disabled+.control-mark {
-  border: 1.5px solid #2d34404f;
-}
-
-.filler-label-checked:hover .control-mark-checked {
+.filler-control-input:checked+.control-mark {
+  background-image: url(/images/catalogue/checkbox-selected.svg);
+  background-size: 16px 16px;
   border: none;
   outline: none;
 }
 
-.filler-label-checked:hover .checked-icon {
+.filler-control-input:checked:hover+.control-mark,
+.filler-control-input:checked:focus+.control-mark {
+  background-image: url(/images/catalogue/checkbox-selected-hover.svg);
+  background-size: 100%;
   border: none;
   outline: none;
-  fill: #FCFCFC;
 }
 
 .filler-control-input:checked:disabled+.control-mark {
+  background-image: url(/images/catalogue/checkbox-selected.svg);
+  background-size: 100%;
   border: none;
-  outline: none;
+  opacity: 0.5;
+}
+
+.filler-control-input:hover+.control-mark,
+.filler-control-input:focus+.control-mark {
+  outline: 1.5px solid #FCFCFC;
+}
+
+.filler-control-input:disabled+.control-mark {
+  opacity: 0.5;
 }
 
 .button-apply {
@@ -2384,6 +2384,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  min-width: 168px;
   padding: 0;
   list-style-type: none;
 }
@@ -2391,7 +2393,6 @@ body {
 .pagination-item {
   margin: 0;
   padding: 0;
-  width: 24px;
   line-height: 20px;
 }
 
