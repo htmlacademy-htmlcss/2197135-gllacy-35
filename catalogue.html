@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="/images/favicon.ico">
   </head>
 
   <body>
     <header class="main_menu">
       <nav class="navigation">
         <a class="logo" href="index.html">
-          <img class="logo" src="images/header/logo.svg" width="137" height="56" alt="logo">
+          <img class="logo" src="images/header/logo.svg" width="137" height="56" alt="logo.">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item navigation-item-catalogue">
@@ -54,7 +55,7 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="user-item mob_phone">
-            <a class="user-link mob-phone-link" href="tel:78005558628">+7 800 555-86-28</a>
+            <a class="user-link mob-phone-link" href="tel:78005558628">+7 800 555-86-28 </a>
           </li>
           <li class="user-item navigation-item-search">
             <a class="user-link nav-button user-link-search" href="#">
@@ -68,7 +69,9 @@
               <div class="popover-content">
                 <h2 class="visually-hidden">Поиск</h2>
                 <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-                  <input class="search-input" type="search" placeholder="Поиск по сайту">
+                  <label class="visually-hidden" for="search-popup">Поиск по сайту</label>
+                  <input class="search-input" type="search" name="search-popup" id="search-popup"
+                    placeholder="Поиск по сайту">
                 </form>
               </div>
             </div>
@@ -85,8 +88,12 @@
               <div class="popover-content">
                 <h2 class="popover-login-title">Личный кабинет</h2>
                 <form class="login-form" action="https://echo.htmlacademy.ru/" method="get">
-                  <input class="login-input" type="email" placeholder="email@example.com">
-                  <input class="login-input" type="password" placeholder="******">
+                  <label class="visually-hidden" for="email-login">Емейл</label>
+                  <input class="login-input" type="email" name="email-login" id="email-login"
+                    placeholder="email@example.com">
+                  <label class="visually-hidden" for="password-login">Пароль</label>
+                  <input class="login-input" type="password" name="password-login" id="password-login"
+                    placeholder="******">
                 </form>
                 <div class="login-footer">
                   <a class="button-submit" href="#">Войти</a>
@@ -114,7 +121,7 @@
                   <li class="cart-item">
                     <a class="product-link" href="#">
                       <img class="cart-product-image" src="images/main/popular-cards/popular-raspberry.jpg"
-                        alt="малинка" width="46" height="46"></a>
+                        alt="малинка." width="46" height="46"></a>
                     <div class="cart-product-title-container">
                       <p class="cart-item-title cart-item-info">Малинка</p>
                       <p class="cart-item-description cart-item-info">1 кг х 310 ₽</p>
@@ -133,7 +140,7 @@
                   <li class="cart-item">
                     <a class="product-link" href="#">
                       <img class="cart-product-image" src="images/main/popular-cards/popular-bubble-gum.jpg"
-                        alt="малинка" width="46" height="46"> </a>
+                        alt="Бабл-гам." width="46" height="46"> </a>
                     <div class="cart-product-title-container">
                       <p class="cart-item-title cart-item-info">Бабл-гам</p>
                       <p class="cart-item-description cart-item-info">1 кг х 310 ₽</p>
@@ -256,23 +263,6 @@
                     <input class="visually-hidden filler-control-input" name="chocolate" type="checkbox"
                       value="chocolate" checked>
                     <span class="control-mark control-mark-checked">
-                      <svg class="checked-icon" aria-hidden="true" focusable="false" width="16" height="16"
-                        viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#a)">
-                          <g clip-path="url(#b)">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 0 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z" />
-                          </g>
-                        </g>
-                        <defs>
-                          <clipPath>
-                            <path fill="#fff" d="M0 0h16v16H0z" />
-                          </clipPath>
-                          <clipPath>
-                            <path fill="#fff" d="M0 0h16v16H0z" />
-                          </clipPath>
-                        </defs>
-                      </svg>
                     </span>
                     <span class="control-label">шоколадные</span>
                   </label>
@@ -280,23 +270,6 @@
                     <input class="visually-hidden filler-control-input" name="sugar-powder" type="checkbox"
                       value="sugar-powder" checked>
                     <span class="control-mark control-mark-checked">
-                      <svg class="checked-icon" aria-hidden="true" focusable="false" width="16" height="16"
-                        viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#a)">
-                          <g clip-path="url(#b)">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M1.62 1.62a.96.96 0 0 1 .68-.29h8.95a.67.67 0 1 0 0-1.33H2.3A2.3 2.3 0 0 0 0 2.3v11.4A2.3 2.3 0 0 0 2.3 16h11.4a2.3 2.3 0 0 0 2.3-2.3V8a.67.67 0 0 0-1.34 0v5.7a.96.96 0 0 1-.96.97H2.3a.96.96 0 0 1-.97-.97V2.3c0-.26.1-.5.29-.68Zm14.2.32a.67.67 0 1 0-.97-.92L7.6 8.66 5.78 6.73a.67.67 0 0 0-.97.91l2.32 2.45a.67.67 0 0 0 .97 0l7.72-8.15Z" />
-                          </g>
-                        </g>
-                        <defs>
-                          <clipPath>
-                            <path fill="#fff" d="M0 0h16v16H0z" />
-                          </clipPath>
-                          <clipPath>
-                            <path fill="#fff" d="M0 0h16v16H0z" />
-                          </clipPath>
-                        </defs>
-                      </svg>
                     </span>
                     <span class="control-label">сахарные посыпки</span>
                   </label>
@@ -311,7 +284,7 @@
                     <span class="control-label">сиропы</span>
                   </label>
                   <label class="filler-label">
-                    <input class="visually-hidden" name="jams" type="checkbox" value="jams">
+                    <input class="visually-hidden filler-control-input" name="jams" type="checkbox" value="jams">
                     <span class="control-mark"></span>
                     <span class="control-label">джемы</span>
                   </label>
@@ -327,7 +300,7 @@
               <li class="product-item">
                 <a class="product-link" href="#">
                   <img class="raspberry product-card" src="images/catalogue/product-cards/product-card-raspberry.jpg"
-                    alt="малинка" width="168" height="168">
+                    alt="малинка." width="168" height="168">
                   <h3 class="product-name">Малинка</h3>
                   <p class="product-description">Сливочное мороженое с малиновым джемом</p>
                 </a>
@@ -346,7 +319,7 @@
               <li class="product-item">
                 <a class="product-link" href="#">
                   <img class="phistachio product-card" src="images/catalogue/product-cards/product-card-phistachio.jpg"
-                    alt="фисташка" width="168" height="168">
+                    alt="фисташка." width="168" height="168">
                   <h3 class="product-name">Фисташка</h3>
                   <p class="product-description">Фисташковый пломбир с кусочками шоколада</p>
                 </a>
@@ -365,7 +338,7 @@
               <li class="product-item">
                 <a class="product-link" href="#">
                   <img class="blueberry product-card" src="images/catalogue/product-cards/product-card-blueberry.jpg"
-                    alt="Черника" width="168" height="168">
+                    alt="Черника." width="168" height="168">
                   <h3 class="product-name">Черника</h3>
                   <p class="product-description">Крем-брюле с черничным джемом</p>
                 </a>
@@ -384,7 +357,7 @@
               <li class="product-item">
                 <a class="product-link" href="#">
                   <img class="bubble-gum product-card" src="images/catalogue/product-cards/product-card-bubble-gum.jpg"
-                    alt="Бабл-гам" width="168" height="168">
+                    alt="Бабл-гам." width="168" height="168">
                   <h3 class="product-name">Бабл-гам</h3>
                   <p class="product-description">Ванильный пломбир со сладкой посыпкой</p>
                 </a>
@@ -403,7 +376,7 @@
               <li class="product-item">
                 <a class="product-link" href="#">
                   <img class="blackberry product-card" src="images/catalogue/product-cards/product-card-blackberry.jpg"
-                    alt="Ежевика" width="168" height="168">
+                    alt="Ежевика." width="168" height="168">
                   <h3 class="product-name">Ежевика</h3>
                   <p class="product-description">Сливочное мороженое с ежевичным джемом</p>
                 </a>
@@ -422,7 +395,7 @@
               <li class="product-item">
                 <a class="product-link" href="#">
                   <img class="banana product-card" src="images/catalogue/product-cards/product-card-banana.jpg"
-                    alt="Банан" width="168" height="168">
+                    alt="Банан." width="168" height="168">
                   <h3 class="product-name">Банан</h3>
                   <p class="product-description">Сливочный пломбир с банановым вкусом</p>
                 </a>
@@ -441,7 +414,7 @@
               <li class="product-item">
                 <a class="product-link" href="#">
                   <img class="chocolate product-card" src="images/catalogue/product-cards/product-card-chocolate.jpg"
-                    alt="Шоколад" width="168" height="168">
+                    alt="Шоколад." width="168" height="168">
                   <h3 class="product-name">Шоколад</h3>
                   <p class="product-description">Классический шоколадный пломбир</p>
                 </a>
@@ -460,7 +433,7 @@
               <li class="product-item">
                 <a class="product-link" href="#">
                   <img class="strawberry product-card" src="images/catalogue/product-cards/product-card-strawberry.jpg"
-                    alt="Клубничка" width="168" height="168">
+                    alt="Клубничка." width="168" height="168">
                   <h3 class="product-name">Клубничка</h3>
                   <p class="product-description">Сливочный пломбир с клубничным вкусом</p>
                 </a>
@@ -479,7 +452,7 @@
               <li class="product-item">
                 <a class="product-link" href="#">
                   <img class="lemon product-card" src="images/catalogue/product-cards/product-card-lemon.jpg"
-                    alt="Лимон" width="168" height="168">
+                    alt="Лимон." width="168" height="168">
                   <h3 class="product-name">Лимон</h3>
                   <p class="product-description">Освежающий лимонный сорбет</p>
                 </a>
@@ -497,8 +470,8 @@
               </li>
               <li class="product-item">
                 <a class="product-link" href="#">
-                  <img class="mint product-card" src="images/catalogue/product-cards/product-card-mint.jpg" alt="Ментол"
-                    width="168" height="168">
+                  <img class="mint product-card" src="images/catalogue/product-cards/product-card-mint.jpg"
+                    alt="Ментол." width="168" height="168">
                   <h3 class="product-name">Ментол</h3>
                   <p class="product-description">Сливочный пломбир с ментоловым сиропом</p>
                 </a>
@@ -516,7 +489,7 @@
               </li>
               <li class="product-item">
                 <a class="product-link" href="#">
-                  <img class="nut product-card" src="images/catalogue/product-cards/product-card-nut.jpg" alt="Орешек"
+                  <img class="nut product-card" src="images/catalogue/product-cards/product-card-nut.jpg" alt="Орешек."
                     width="168" height="168">
                   <h3 class="product-name">Орешек</h3>
                   <p class="product-description">Фисташковый пломбир с шоколадным сиропом</p>
@@ -536,7 +509,7 @@
               <li class="product-item">
                 <a class="product-link" href="#">
                   <img class="crem-brule product-card" src="images/catalogue/product-cards/product-card-crem-brule.jpg"
-                    alt="Крем-брюле" width="168" height="168">
+                    alt="Крем-брюле." width="168" height="168">
                   <h3 class="product-name">Крем-брюле</h3>
                   <p class="product-description">Классическое крем-брюле</p>
                 </a>
@@ -655,7 +628,7 @@
         <section class="creator-link-section">
           <h2 class="visually-hidden">Автор сайта</h2>
           <a class="academy-link" href=" https://htmlacademy.ru/">
-            <img class="academy-logo" src="images/footer/logo-htmlacademy.svg" alt="Лого академии" width="93"
+            <img class="academy-logo" src="images/footer/logo-htmlacademy.svg" alt="Лого академии." width="93"
               height="27">
           </a>
           <p>

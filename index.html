@@ -5,14 +5,13 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="/images/favicon.ico">
   </head>
 
   <body>
     <header class="main_menu">
       <nav class="navigation">
-        <a class="logo" href="index.html">
-          <img class="logo" src="images/header/logo.svg" width="137" height="56" alt="logo">
-        </a>
+        <img class="logo" src="images/header/logo.svg" width="137" height="56" alt="logo.">
         <ul class="navigation-list">
           <li class="navigation-item navigation-item-catalogue">
             <a class="navigation-link navigation-link-catalogue" href="catalogue.html">Каталог
@@ -54,7 +53,7 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="user-item mob_phone">
-            <a class="user-link mob-phone-link" href="tel:78005558628">+7 800 555-86-28</a>
+            <a class="user-link mob-phone-link" href="tel:78005558628">+7 800 555-86-28 </a>
           </li>
           <li class="user-item navigation-item-search">
             <a class="user-link nav-button user-link-search" href="#">
@@ -68,7 +67,9 @@
               <div class="popover-content">
                 <h2 class="visually-hidden">Поиск</h2>
                 <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-                  <input class="search-input" type="search" placeholder="Поиск по сайту">
+                  <label class="visually-hidden" for="search-popup">Поиск по сайту</label>
+                  <input class="search-input" type="search" name="search-popup" id="search-popup"
+                    placeholder="Поиск по сайту">
                 </form>
               </div>
             </div>
@@ -85,8 +86,12 @@
               <div class="popover-content">
                 <h2 class="popover-login-title">Личный кабинет</h2>
                 <form class="login-form" action="https://echo.htmlacademy.ru/" method="get">
-                  <input class="login-input" type="email" placeholder="email@example.com">
-                  <input class="login-input" type="password" placeholder="******">
+                  <label class="visually-hidden" for="email-login">Емейл</label>
+                  <input class="login-input" type="email" name="email-login" id="email-login"
+                    placeholder="email@example.com">
+                  <label class="visually-hidden" for="password-login">Пароль</label>
+                  <input class="login-input" type="password" name="password-login" id="password-login"
+                    placeholder="******">
                 </form>
                 <div class="login-footer">
                   <a class="button-submit" href="#">Войти</a>
@@ -114,7 +119,7 @@
                   <li class="cart-item">
                     <a class="product-link" href="#">
                       <img class="cart-product-image" src="images/main/popular-cards/popular-raspberry.jpg"
-                        alt="малинка" width="46" height="46"></a>
+                        alt="малинка." width="46" height="46"></a>
                     <div class="cart-product-title-container">
                       <p class="cart-item-title cart-item-info">Малинка</p>
                       <p class="cart-item-description cart-item-info">1 кг х 310 ₽</p>
@@ -133,7 +138,7 @@
                   <li class="cart-item">
                     <a class="product-link" href="#">
                       <img class="cart-product-image" src="images/main/popular-cards/popular-bubble-gum.jpg"
-                        alt="малинка" width="46" height="46"> </a>
+                        alt="Бабл-гам." width="46" height="46"> </a>
                     <div class="cart-product-title-container">
                       <p class="cart-item-title cart-item-info">Бабл-гам</p>
                       <p class="cart-item-description cart-item-info">1 кг х 310 ₽</p>
@@ -183,7 +188,7 @@
             </div>
             <div class="slider-photos-container">
               <img class="strawberry-ice_image" src="images/main/slides/ice-cream-slide-1.png"
-                alt="нежный пломбир с джемом" width="306" height="507">
+                alt="нежный пломбир с джемом." width="306" height="507">
               <button class="slider-button slider-button-previous" type="button">
                 <svg class="slider-button-icon slider-button-icon-previous" width="7" height="12" viewBox="0 0 7 12"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -205,13 +210,13 @@
               <ol class="ice-cream-images">
                 <li class="banana-ice-cream ice-cream-image">
                   <img class="banana-ice-cream-image" src="/images/main/slides/ice-cream-slide-2.png"
-                    alt="Сливочное мороженное со вкусом банана" width="306" height="507">
+                    alt="Сливочное мороженное со вкусом банана." width="306" height="507">
                   <span class="visually-hidden">Сливочное мороженное<br>
                     со вкусом банана</span>
                 </li>
                 <li class="caramel-ice-cream ice-cream-image">
                   <img class="caramel-ice-cream-image" src="/images/main/slides/ice-cream-slide-3.png"
-                    alt="Карамельный пломбир с маршмеллоу" width="306" height="507">
+                    alt="Карамельный пломбир с маршмеллоу." width="306" height="507">
                   <span class="visually-hidden">Карамельный пломбир<br>
                     с маршмеллоу</span>
                 </li>
@@ -323,7 +328,7 @@
             <li class="popular-item">
               <a class="product-link" href="#">
                 <img class="popular_raspberry popular-card" src="images/main/popular-cards/popular-raspberry.jpg"
-                  alt="малинка" width="168" height="168">
+                  alt="малинка." width="168" height="168">
                 <h3 class="popular-name">Малинка</h3>
                 <p class="popular-description">
                   Сливочное мороженое с малиновым джемом
@@ -344,7 +349,7 @@
             <li class="popular-item">
               <a class="product-link" href="#">
                 <img class="popular_phistachio popular-card" src="images/main/popular-cards/popular-phistachio.jpg"
-                  alt="Фисташка" width="168" height="168">
+                  alt="Фисташка." width="168" height="168">
                 <h3 class="popular-name">Фисташка</h3>
                 <p class="popular-description">
                   Фисташковый пломбир с кусочками шоколада
@@ -365,7 +370,7 @@
             <li class="popular-item">
               <a class="product-link" href="#">
                 <img class="popular_blueberry popular-card" src="images/main/popular-cards/popular-blueberry.jpg"
-                  alt="Черника" width="168" height="168">
+                  alt="Черника." width="168" height="168">
                 <h3 class="popular-name">Черника</h3>
                 <p class="popular-description">Крем-брюле с черничным джемом</p>
               </a>
@@ -384,7 +389,7 @@
             <li class="popular-item">
               <a class="product-link" href="#">
                 <img class="popular_bubble-gum popular-card" src="images/main/popular-cards/popular-bubble-gum.jpg"
-                  alt="Бабл-гам" width="168" height="168">
+                  alt="Бабл-гам." width="168" height="168">
                 <h3 class="popular-name">Бабл-гам</h3>
                 <p class="popular-description">
                   Ванильный пломбир<br>
@@ -622,7 +627,7 @@
         <section class="creator-link-section">
           <h2 class="visually-hidden">Автор сайта</h2>
           <a class="academy-link" href=" https://htmlacademy.ru/">
-            <img class="academy-logo" src="images/footer/logo-htmlacademy.svg" alt="Лого академии" width="93"
+            <img class="academy-logo" src="images/footer/logo-htmlacademy.svg" alt="Лого академии." width="93"
               height="27">
           </a>
           <p>
