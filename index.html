@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="/images/favicon.ico">
+    <link rel="icon" href="/favicon.ico">
   </head>
 
   <body>
@@ -141,7 +141,7 @@
                         alt="Бабл-гам." width="46" height="46"> </a>
                     <div class="cart-product-title-container">
                       <p class="cart-item-title cart-item-info">Бабл-гам</p>
-                      <p class="cart-item-description cart-item-info">1 кг х 310 ₽</p>
+                      <p class="cart-item-description cart-item-info">1.5 кг х 320 ₽</p>
                     </div>
                     <p class="cart-item-price">480 ₽</p>
                     <button type="button" class="cart-item-button">
@@ -156,7 +156,7 @@
                   </li>
                 </ul>
                 <div class="popover-cart-total-container">
-                  <button type="button" class="button-submit">Оформить заказ</button>
+                  <button type="button" class="button-submit button-popover-cart">Оформить заказ</button>
                   <p class="cart-price-total">Итого: 790 ₽</p>
                 </div>
               </div>
@@ -227,7 +227,7 @@
           <footer class="heroblock-footer">
             <ul class="next-slide-bullet">
               <li class="slide-bullet">
-                <button class="bullet-button bullet-active-button">
+                <button class="bullet-button bullet-active-button" type="button">
                   <svg class="bullet-button-icon bullet-button-active-icon" aria-hidden="true" focusable="false"
                     width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="12" height="12" rx="6" />
@@ -236,7 +236,7 @@
                 </button>
               </li>
               <li class="slide-bullet">
-                <button class="bullet-button">
+                <button class="bullet-button" type="button">
                   <svg class="bullet-button-icon" aria-hidden="true" focusable="false" width="12" height="12"
                     viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="12" height="12" rx="6" />
@@ -245,7 +245,7 @@
                 </button>
               </li>
               <li class="slide-bullet">
-                <button class="bullet-button">
+                <button class="bullet-button" type="button">
                   <svg class="bullet-button-icon" aria-hidden="true" focusable="false" width="12" height="12"
                     viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="12" height="12" rx="6" />
@@ -294,7 +294,7 @@
 
         <section class="gifts-section">
           <h2 class="header-gifts-section">
-            Заказывайте мороженное<br>
+            Заказывайте мороженое<br>
             и получайте подарки!
           </h2>
           <ul class="gifts-items">
@@ -372,7 +372,8 @@
                 <img class="popular_blueberry popular-card" src="images/main/popular-cards/popular-blueberry.jpg"
                   alt="Черника." width="168" height="168">
                 <h3 class="popular-name">Черника</h3>
-                <p class="popular-description">Крем-брюле с черничным джемом</p>
+                <p class="popular-description">Крем-брюле<br>
+                  с черничным джемом</p>
               </a>
               <div class="product-buy-container">
                 <b class="price">330 ₽/кг</b>
@@ -525,7 +526,7 @@
               </p>
               <p class="delivery-form-address field-group">
                 <span class="delivery-data delivery-data-icon">
-                  <label for="delivery-adress" class="delivery-data-name delivery-data">Адресс</label>
+                  <label for="delivery-adress" class="delivery-data-name delivery-data">Адрес</label>
                   <span class="tooltip">
                     <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-address">
                       <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="14" height="14"
@@ -550,9 +551,9 @@
         </section>
         <section class="address-section">
           <div class="address-block">
-            <h2 class="visually-hidden">Адресс магазина</h2>
+            <h2 class="visually-hidden">Адрес магазина</h2>
             <p class="address-text">
-              Адресс главного офиса<br>
+              Адрес главного офиса<br>
               и офлайн-магазина:
             </p>
             <address class="store-address">
@@ -630,7 +631,7 @@
             <img class="academy-logo" src="images/footer/logo-htmlacademy.svg" alt="Лого академии." width="93"
               height="27">
           </a>
-          <p>
+          <p class="creator-text">
             Сделано в
             <a class="academy-link" href=" https://htmlacademy.ru/">html academy</a>© 2021
           </p>
@@ -640,7 +641,7 @@
 
     <div class="modal-container modal-container-closed">
       <div class="modal modal-auth">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
